@@ -3,7 +3,7 @@ syntax = "proto3";
 option go_package = "github.com/borowiak-m/crypto-utxo-protobuffs/proto";
 
 message Block {
-    Heder header = 1;
+    Header header = 1;
     repeated Transaction transactions = 2;
 }
 
@@ -15,4 +15,4 @@ message Header {
     int64 timestamp = 5;
 }
 
-message Transaaction {}
+message Transaction {}
